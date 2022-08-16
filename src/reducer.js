@@ -1,0 +1,33 @@
+export const initialState = {
+    user: null
+}
+
+export const actionTypes = {
+    SET_USER: 'SET_USER'
+}
+
+const reducer = (state, action) => {
+    console.log(actionTypes)
+    switch (action.type) {
+        case actionTypes.SET_USER:
+            return {
+                ...state,
+                user: action.user,
+            }
+        default:
+            return state
+    }
+}
+
+export default reducer
+
+
+// initial Data layer looks
+
+
+
+// actions on data and dispatch action into the data so it listen to it
+
+
+
+
